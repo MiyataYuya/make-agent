@@ -77,6 +77,7 @@ export function createOllama(config?: {
                     body: JSON.stringify({
                         model: modelId,
                         messages: convertMessages(params.messages),
+                        tools,
                         stream: false,
                     }),
                 });
